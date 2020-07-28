@@ -1,0 +1,23 @@
+html, body
+{
+    height: auto;
+    overflow-y: hidden;
+}
+
+.flex-wrapper
+{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.content-wrapper
+{
+    background-color: #ddd;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 5px;
+}

@@ -1,0 +1,58 @@
+.button-wrapper
+{
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+#prev-video-button
+{
+    margin-right: 10px;
+}
+
+li.video
+{
+    list-style: none;
+    margin: 10px 0px;
+    font-size: large;
+    cursor: pointer;
+}
+
+
+li.currently-playing
+{
+    outline: 1px solid white;
+    padding: 10px;
+}
+
+li.currently-playing:before
+{
+    content: Currently Playing;
+    content: 'Currently Playing: ';
+    color: brown;
+}
+
+div.player-wrapper
+{
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+div.list-wrapper
+{
+    height: 55%;
+    overflow-y: scroll;
+    outline: 3px solid white;
+    padding: 20px;
+    margin: 0 auto;
+    box-shadow: -3px -1px 3px 5px white;
+    width: 90%;
+    background-color: #111;
+    border-radius: 10px;
+}
+
+h2.video-list-h2
+{
+    text-align: center;
+}

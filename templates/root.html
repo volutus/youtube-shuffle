@@ -1,0 +1,26 @@
+
+<head>
+    <link rel="stylesheet" href="{{url_for('static', filename='root.css')}}">
+</head>
+
+{% extends "base.html" %}
+{% block body %}
+<div class="flex-wrapper">
+    <div class="content-wrapper">
+        {% if missing_id %}
+            <h3> No ID was found! Please provide one below. </h3>
+        {% endif %}
+        <h2> Shuffle a YouTube Playlist </h2>
+        <form action="" method="post" novalidate>
+            {{ form.hidden_tag() }}
+            <p>
+                {{ form.playlist_id.label }} <br>
+                {{ form.playlist_id(size=32) }}
+            </p>
+            <p>
+                {{ form.submit }}
+            </p>
+        </form>
+    </div>
+</div>
+{% endblock %}
